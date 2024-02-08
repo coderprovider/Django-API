@@ -14,8 +14,8 @@
     <span class="hljs-comment"># Каждый пользователь будет иметь одну и только одну связанную с ним модель Profile.</span>
     user = models.OneToOneField(
         <span class="hljs-string">'authentication.User'</span>, on_delete=models.CASCADE
-    )
-
+    )   
+    
     <span class="hljs-comment"># У каждого профиля пользователя будет поле, с помощью  other users</span>
     <span class="hljs-comment"># которого они могут рассказать что-то о себе. Это поле будет пустым в</span>
     <span class="hljs-comment"># момент создания пользователем своей учетной записи, поэтому </span>
